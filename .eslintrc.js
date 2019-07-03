@@ -1,11 +1,10 @@
 module.exports = {
   root: true,
-  parser: "babel-eslint",
   parserOptions: {
-    sourceType: "module"
+    parser: 'babel-eslint',
   },
   env: {
-    browser: true,
+    // browser: true,
     node: true
   },
   extends: [
@@ -45,6 +44,10 @@ module.exports = {
     "no-underscore-dangle": 0,
     "class-methods-use-this": 0,
     "consistent-return": 0,
-    "linebreak-style": 0
+    "linebreak-style": 0,
+    'indent': 'off',
+    'vue/script-indent': ['warn', 2, {
+      'baseIndent': 1
+    }]
   }
 }
